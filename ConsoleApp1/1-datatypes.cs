@@ -5,6 +5,10 @@
     {
         byte age = 20;
         Console.WriteLine(age);
+        Console.WriteLine();
+
+        short number = 22;
+        Console.WriteLine(number);
 
         Console.WriteLine("byte min value : " +byte.MinValue);
         Console.WriteLine("byte Max value : " + byte.MaxValue);

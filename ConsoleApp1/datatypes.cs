@@ -11,7 +11,7 @@ class Datatypes
         Console.WriteLine(number);
 
 
- 
+  
 
         Console.WriteLine("byte min value : " + byte.MinValue);
         Console.WriteLine("byte Max value : " + byte.MaxValue);

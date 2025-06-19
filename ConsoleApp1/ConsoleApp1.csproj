@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>StringExample</StartupObject>
+    <StartupObject>operators</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,8 @@
     <Compile Include="1-datatypes.cs" />
     <Compile Include="2VarAndDynamic.cs" />
     <Compile Include="3Strings.cs" />
+    <Compile Include="4-strings.cs" />
+    <Compile Include="5-operators.cs" />
     <Compile Include="datatypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -11,7 +11,7 @@ class dataconversion
 
         //byte → short → int → long → float → double
 
-        //          char → int
+        //          byte → int
 
         //         int → float
 

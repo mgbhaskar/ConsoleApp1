@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>array</StartupObject>
+    <StartupObject>whileloop</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,6 +53,7 @@
     <Compile Include="5-operators.cs" />
     <Compile Include="6-dataconversation.cs" />
     <Compile Include="7Arrays.cs" />
+    <Compile Include="8-whileloop.cs" />
     <Compile Include="datatypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

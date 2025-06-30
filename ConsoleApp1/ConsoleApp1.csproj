@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>whileloop</StartupObject>
+    <StartupObject>tasks</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="1-datatypes.cs" />
+    <Compile Include="10.Tasks.cs" />
     <Compile Include="2VarAndDynamic.cs" />
     <Compile Include="3Strings.cs" />
     <Compile Include="4-strings.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="6-dataconversation.cs" />
     <Compile Include="7Arrays.cs" />
     <Compile Include="8-whileloop.cs" />
+    <Compile Include="9-nothig.cs" />
     <Compile Include="datatypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

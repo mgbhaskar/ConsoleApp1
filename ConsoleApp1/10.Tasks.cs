@@ -6,7 +6,7 @@
     static void Main() 
     
     {
-     
+
 
         /*
 
@@ -57,7 +57,7 @@
         string[] employees = { "John", "Robert", "Chandra", "Peter" };
 
         Console.WriteLine("2) Get the Third Employee from the Array");
-        Console.WriteLine("Third employee: " + employees[2]); 
+        Console.WriteLine("Third employee: " + employees[2]);
         Console.WriteLine();
 
 
@@ -72,7 +72,7 @@
         {
             if (emp.StartsWith("J"))
             {
-                Console.WriteLine("Employee starting with J: " + emp);  
+                Console.WriteLine("Employee starting with J: " + emp);
             }
         }
         Console.WriteLine();
@@ -80,7 +80,7 @@
 
 
         Console.WriteLine("5) Convert Employees List into Single String");
-        string singleString = string.Join(", ", employees);   
+        string singleString = string.Join(", ", employees);
         Console.WriteLine("All employees: " + singleString);       //ALL NAMES ExecUTED
         Console.WriteLine();
 
@@ -107,12 +107,12 @@
 
 
         Console.WriteLine("8) Difference Between for and foreach");
-        
+
         for (int i = 1; i < employees.Length; i++)
         {
             Console.WriteLine("Using for: " + employees[i]);                //  for is modify items
         }
- 
+
 ;
 
         foreach (string emp in employees)
@@ -157,6 +157,114 @@
         Control complex decision-making.
 
         */
+        int age = 25;
+        bool Citizen = true;
+
+        if (age >= 20 && Citizen)
+        {
+            Console.WriteLine("Eligible to vote"); //execute this line 
+        }
+        else
+        {
+            Console.WriteLine("Not eligible");
+        }
+        Console.WriteLine();
+
+
+
+        Console.WriteLine("12) What is nullable type? Example");
+
+        int? value = null;
+
+        if (value.HasValue)
+        {
+            Console.WriteLine("Age is " + value.Value);
+        }
+        else
+        {
+            Console.WriteLine("Age not provided");
+        }
+        Console.WriteLine();
+
+
+
+        Console.WriteLine("13) What is implicit conversion type? Example");
+        //smaller type to larger type
+        int num = 1000;
+        double d = num;  
+        Console.WriteLine(d); 
+        Console.WriteLine();
+
+
+
+        Console.WriteLine("14) Prepare method with params and return type");
+        int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        int sum = Add(10, 20);
+        Console.WriteLine("Sum: " + sum);
+
+
+        void DayName(int day)
+        {
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Sunday");
+                    break;
+                case 2:
+                    Console.WriteLine("Monday");
+                    break;
+                case 3:
+                    Console.WriteLine("Tuesday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid day");
+                    break;
+            }
+        }
+
+        Console.WriteLine();
+
+
+
+        Console.WriteLine(" 17. Prepare method with if else if else & switch case");
+        void CheckGrade(int score)
+        {
+            if (score >= 90)
+            {
+                Console.WriteLine("Grade: A");
+            }
+            else if (score >= 95)
+            {
+                Console.WriteLine("Grade: B");
+            }
+            else
+            {
+                Console.WriteLine("Grade: C or below");
+            }
+
+            // Additional example using switch
+            switch (score / 10)
+            {
+                case 10:
+                case 9:
+                    Console.WriteLine("Excellent");
+                    break;
+                case 8:
+                case 7:
+                    Console.WriteLine("Good");
+                    break;
+                default:
+                    Console.WriteLine("Needs improvement");
+                    break;
+            }
+        }
+
+
+
 
 
 

@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>tasks</StartupObject>
+    <StartupObject>Tasks</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

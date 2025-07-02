@@ -1,73 +1,26 @@
 ﻿using System;
 
-
-    class tasks
+class Tasks
+{
+    static void Main()
     {
-    static void Main() 
-    
-    {
-
-
-        /*
-
-                           Employees Data : 
-                           1.  “John, Robert, Chandra, Peter”
-                           2. [“John”, “Robert”, “Chandra”, Peter”]
-
-
-
-
-                      1.Prepare the String Array 
-
-                      2.Get the Third Employee from the Array
-
-                      3.Check weather Second and Third employee Equals or not from the Array
-
-                      4.Check the employee whose name starts with “J” from the Array
-
-                       5.Convert Employees List into single String
-
-                       6.Replace the “Robert” with “Peter” in String
-
-                      7. Get the Employee whose name length is more that 4 charcters from the array
-
-                       8.Diff b/w for and foreach ? Explain with example
-
-                       9.Explain me what is the importance of the Looping system. ? Explain with Example
-
-                        10.What are the floating data types ? EXample
-
-                        11.What are the Logical operators importance of that ? Explain with example
-
-                       12.What is the nullable types ? Example
-
-                       13.What is implicit conversation type ? Example
-
-                       14.Prepare the Method with params with return types.
-
-                       15.Prepare the Methods with conditions (if elseif else)
-
-                       16.Prepare the methods with Conditions (switch case)
-
-                       17.Prepare the Methods with if else if else and Switch case conditions.
-
-
-      */
-        //                        0        1         2          3
+        // 1. Prepareing the String Array
         string[] employees = { "John", "Robert", "Chandra", "Peter" };
 
-        Console.WriteLine("2) Get the Third Employee from the Array");
+        Console.WriteLine("2) Get the Third Employe Array");
         Console.WriteLine("Third employee: " + employees[2]);
         Console.WriteLine();
 
 
-        Console.WriteLine(" 3) Check Whether Second and Third Employee are Equal");
-        bool Equalsornot = employees[1] == employees[2];
-        Console.WriteLine("Second and Third are equal: " + Equalsornot);
+
+        Console.WriteLine("3) Check Whether Second and Third Employee are Equal");
+        bool equalsOrNot = employees[1] == employees[2];
+        Console.WriteLine("Second and Third are equal: " + equalsOrNot);
         Console.WriteLine();
 
 
-        Console.WriteLine("4) Check the Employee Whose Name Starts with J ");
+
+        Console.WriteLine("4) Check the Employee Whose Name Starts with J");
         foreach (string emp in employees)
         {
             if (emp.StartsWith("J"))
@@ -81,12 +34,12 @@
 
         Console.WriteLine("5) Convert Employees List into Single String");
         string singleString = string.Join(", ", employees);
-        Console.WriteLine("All employees: " + singleString);       //ALL NAMES ExecUTED
+        Console.WriteLine("All employees: " + singleString);
         Console.WriteLine();
 
 
 
-        Console.WriteLine(" 6) Replace “Robert” with “Peter” in the String");
+        Console.WriteLine("6) Replace 'Robert' with 'Peter' in the String");
         string replaced = singleString.Replace("Robert", "Peter");
         Console.WriteLine(replaced);
         Console.WriteLine();
@@ -99,7 +52,6 @@
             if (emp.Length > 4)
             {
                 Console.WriteLine("Name > 4 characters: " + emp);
-                // Output: Robert, Chandra, Peter
             }
         }
         Console.WriteLine();
@@ -107,62 +59,50 @@
 
 
         Console.WriteLine("8) Difference Between for and foreach");
-
-        for (int i = 1; i < employees.Length; i++)
+        Console.WriteLine("Using for:");
+        for (int i = 0; i < employees.Length; i++)
         {
-            Console.WriteLine("Using for: " + employees[i]);                //  for is modify items
+            Console.WriteLine(employees[i]);
         }
 
-;
-
+        Console.WriteLine("Using foreach:");
         foreach (string emp in employees)
         {
-            Console.WriteLine("Using foreach: " + emp);        //   foreach  Only read items (not modify),
+            Console.WriteLine(emp);
         }
-
         Console.WriteLine();
 
 
 
-        Console.WriteLine("9) Importance of Looping System with Example");  // this is instead of writiong
 
-        /*
-             To avod repetive code
-
-             Handle collections (like arrays, lists)
-
-             Automate operations (e.g., printing, filtering)
-         */
+        Console.WriteLine("9) Importance of Looping System with Example");
         for (int i = 0; i < employees.Length; i++)
         {
             Console.WriteLine("Welcome " + employees[i]);
         }
         Console.WriteLine();
 
-        Console.WriteLine("10) What Are Floating Data Types?");
+
+
+
+        Console.WriteLine("10) What Are Floating Data Types? Example");
         float pi = 3.14f;
         double price = 99.99;
         decimal salary = 12345.67m;
         Console.WriteLine(pi);
+        Console.WriteLine(price);
+        Console.WriteLine(salary);
         Console.WriteLine();
 
 
 
 
-        Console.WriteLine("11. What are the logical operators? Importance & example");
-        /*
-            operators two types --> And not symbols is && , !
-        Importance:is
-        Combine multiple conditions in if, while, for,
-        Control complex decision-making.
-
-        */
+        Console.WriteLine("11) What are Logical Operators? Importance & Example");
         int age = 25;
-        bool Citizen = true;
-
-        if (age >= 20 && Citizen)
+        bool isCitizen = true;
+        if (age >= 18 && isCitizen)
         {
-            Console.WriteLine("Eligible to vote"); //execute this line 
+            Console.WriteLine("Eligible to vote");
         }
         else
         {
@@ -172,41 +112,68 @@
 
 
 
-        Console.WriteLine("12) What is nullable type? Example");
 
+        Console.WriteLine("12) What is Nullable Type? Example");
         int? value = null;
-
         if (value.HasValue)
         {
-            Console.WriteLine("Age is " + value.Value);
+            Console.WriteLine("Value is " + value.Value);
         }
         else
         {
-            Console.WriteLine("Age not provided");
+            Console.WriteLine("Value not provided");
         }
         Console.WriteLine();
 
 
 
-        Console.WriteLine("13) What is implicit conversion type? Example");
-        //smaller type to larger type
+
+        Console.WriteLine("13) What is Implicit Conversion Type? Example");
         int num = 1000;
-        double d = num;  
-        Console.WriteLine(d); 
+        double d = num;  // Implicit conversion
+        Console.WriteLine(d);
         Console.WriteLine();
 
 
 
-        Console.WriteLine("14) Prepare method with params and return type");
+
+        Console.WriteLine("14) Prepare Method with Params and Return Type");
         int Add(int a, int b)
         {
             return a + b;
         }
-
         int sum = Add(10, 20);
         Console.WriteLine("Sum: " + sum);
+        Console.WriteLine();
 
 
+
+
+        Console.WriteLine("15) Method with Conditions (if, else if, else)");
+        void CheckNumber(int n)
+        {
+            if (n > 0)
+            {
+                Console.WriteLine("Positive number");
+            }
+            else if (n < 0)
+            {
+                Console.WriteLine("Negative number");
+            }
+            else
+            {
+                Console.WriteLine("Zero");
+            }
+        }
+        CheckNumber(5);
+        CheckNumber(-3);
+        CheckNumber(0);
+        Console.WriteLine();
+
+
+
+
+        Console.WriteLine("16) Method with Conditions (switch case)");
         void DayName(int day)
         {
             switch (day)
@@ -220,24 +187,36 @@
                 case 3:
                     Console.WriteLine("Tuesday");
                     break;
+                case 4:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 5:
+                    Console.WriteLine("thursaday");
+                    break;
+                case 6:
+                    Console.WriteLine("Friday");
+                    break;
                 default:
                     Console.WriteLine("Invalid day");
                     break;
             }
         }
-
+        DayName(1);
+        DayName(2);
+        DayName(7);
         Console.WriteLine();
 
 
 
-        Console.WriteLine(" 17. Prepare method with if else if else & switch case");
+
+        Console.WriteLine("17) Method with if else if else and switch case");
         void CheckGrade(int score)
         {
             if (score >= 90)
             {
                 Console.WriteLine("Grade: A");
             }
-            else if (score >= 95)
+            else if (score >= 75)
             {
                 Console.WriteLine("Grade: B");
             }
@@ -246,7 +225,6 @@
                 Console.WriteLine("Grade: C or below");
             }
 
-            // Additional example using switch
             switch (score / 10)
             {
                 case 10:
@@ -262,11 +240,8 @@
                     break;
             }
         }
-
-
-
-
-
-
+        CheckGrade(95);
+        CheckGrade(80);
+        CheckGrade(60);
     }
 }
